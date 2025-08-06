@@ -6,7 +6,7 @@ import { questions } from "./data.js";
 // console.log(questions[0].question)
 // console.log(questions[0].choices[0].text)
 // console.log(questions[0].choices[1].text)
-
+// const 상수, let 변수
 const progressBar = document.querySelector(".progress .value");
 const numberE1 = document.querySelector(".number");
 const questionE1 = document.querySelector(".question");
@@ -19,6 +19,7 @@ let currentNumber = 0;
 let mbti='';
 
 // choice1E1과 choiceE12에 클릭 이벤트를 걸어놓는다.
+// 콜백함수 : 앞에서 정의한 조건이 만족될 때 실행되는 함수.
 choice1E1.addEventListener('click', function(){
   nextQuestion(0);
 })
